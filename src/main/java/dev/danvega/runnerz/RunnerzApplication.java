@@ -24,7 +24,7 @@ public class RunnerzApplication {
 		CommandLineRunner runner() {
 		  return args ->
 		  {
-			  Run run = new Run(1, "Morning Run", LocalDateTime.now(), LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR);
+		  Run run = new Run(1, "Morning Run", LocalDateTime.now(), LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR);
 			  log.info("Running run: {}", run);
 		  };
 		}	  //something that runs after the application has started
